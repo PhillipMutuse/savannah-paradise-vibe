@@ -1,7 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { UtensilsCrossed, Coffee, Wine, Dumbbell, Waves, Sparkles } from "lucide-react";
+import { UtensilsCrossed, Coffee, Wine, Presentation } from "lucide-react";
 import restaurantImage from "@/assets/dining-restaurant.jpg";
-import poolBarImage from "@/assets/pool-bar.jpg";
+import barImage from "@/assets/savanna-bar.jpg";
+import conferenceImage from "@/assets/conference-hall.jpg";
 
 const Dining = () => {
   const dining = [
@@ -13,34 +14,25 @@ const Dining = () => {
       cuisine: "International",
     },
     {
-      name: "Paradise Pool Bar",
-      image: poolBarImage,
-      description: "Casual poolside dining with refreshing cocktails and light bites",
-      hours: "11:00 AM - 9:00 PM",
-      cuisine: "Bar & Grill",
+      name: "The Savanna Lounge",
+      image: barImage,
+      description: "Sophisticated bar featuring premium spirits, signature cocktails, and light appetizers",
+      hours: "5:00 PM - 1:00 AM",
+      cuisine: "Bar & Lounge",
     },
   ];
 
   const amenities = [
     {
-      icon: Waves,
-      title: "Infinity Pool",
-      description: "Stunning infinity pool with panoramic views, open from sunrise to sunset",
-    },
-    {
-      icon: Sparkles,
-      title: "Luxury Spa",
-      description: "Full-service spa offering massages, facials, and wellness treatments",
-    },
-    {
-      icon: Dumbbell,
-      title: "Fitness Center",
-      description: "State-of-the-art gym with modern equipment, available 24/7",
+      icon: Presentation,
+      title: "Conference Hall",
+      image: conferenceImage,
+      description: "State-of-the-art conference facilities with modern audiovisual equipment and flexible seating arrangements for corporate events and meetings",
     },
     {
       icon: UtensilsCrossed,
-      title: "Conference Facilities",
-      description: "Professional meeting rooms and event spaces for business gatherings",
+      title: "Event Spaces",
+      description: "Versatile venues for weddings, celebrations, and special gatherings with customizable catering options",
     },
   ];
 
@@ -129,7 +121,16 @@ const Dining = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {amenities.map((amenity, index) => (
-              <Card key={index} className="border-border">
+              <Card key={index} className="border-border overflow-hidden">
+                {amenity.image && (
+                  <div className="relative h-64 overflow-hidden">
+                    <img
+                      src={amenity.image}
+                      alt={amenity.title}
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                )}
                 <CardContent className="p-6 flex items-start space-x-4">
                   <div className="flex-shrink-0">
                     <div className="p-4 bg-primary/10 rounded-full">
@@ -147,8 +148,8 @@ const Dining = () => {
 
           <div className="mt-12 text-center">
             <p className="text-muted-foreground max-w-3xl mx-auto">
-              All amenities are complimentary for hotel guests. Spa treatments and special services
-              may require advance booking. Contact our concierge for reservations and assistance.
+              Conference facilities and event spaces are available for hotel guests and external bookings.
+              Contact our concierge for reservations, catering options, and event planning assistance.
             </p>
           </div>
         </div>
