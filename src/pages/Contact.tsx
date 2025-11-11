@@ -35,17 +35,17 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      content: "123 Paradise Avenue, Savannah City, SC 12345",
+      content: "Makindu town off Mombasa Road, 250m off Makindu Silk Temple",
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "+1 (555) 123-4567",
+      content: "+254 722454077",
     },
     {
       icon: Mail,
       title: "Email",
-      content: "info@savannahparadise.com",
+      content: "svnparadise01@gmail.com",
     },
     {
       icon: Clock,

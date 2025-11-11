@@ -1,10 +1,10 @@
 import { useState } from "react";
-import heroImage from "@/assets/hero-hotel.jpg";
-import standardRoom from "@/assets/room-standard.jpg";
-import deluxeRoom from "@/assets/room-deluxe.jpg";
-import suiteRoom from "@/assets/room-suite.jpg";
-import restaurantImage from "@/assets/dining-restaurant.jpg";
-import poolBarImage from "@/assets/pool-bar.jpg";
+import heroImage from "@/assets/hero image.jpg";
+import standardRoom from "@/assets/Standard room.jpg";
+import deluxeRoom from "@/assets/deluxe room.jpg";
+import suiteRoom from "@/assets/Superior room.jpg";
+import restaurantImage from "@/assets/dining-restaurant.png";
+import poolBarImage from "@/assets/verandot.png";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);

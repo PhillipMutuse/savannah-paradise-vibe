@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Utensils, Waves, Award } from "lucide-react";
-import heroImage from "@/assets/hero-restaurant-savanna.jpg";
+import heroImage from "@/assets/hero image.jpg";
 
 const Home = () => {
   const features = [
@@ -108,7 +108,7 @@ const Home = () => {
               </Button>
             </Link>
             <Link to="/rooms">
-              <Button size="lg" variant="outline" className="border-primary text-secondary-foreground hover:bg-primary/10">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 Explore Rooms
               </Button>
             </Link>

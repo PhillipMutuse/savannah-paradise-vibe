@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Wifi, Tv, Coffee, Wind } from "lucide-react";
-import standardRoom from "@/assets/room-standard.jpg";
-import deluxeRoom from "@/assets/room-deluxe.jpg";
-import suiteRoom from "@/assets/room-suite.jpg";
+import standardRoom from "@/assets/Standard room.jpg";
+import deluxeRoom from "@/assets/deluxe room.jpg";
+import suiteRoom from "@/assets/Superior room.jpg";
 
 const Rooms = () => {
   const rooms = [
@@ -12,32 +12,31 @@ const Rooms = () => {
       id: 1,
       name: "Standard Room",
       image: standardRoom,
-      price: "$199",
+      price: "On Request",
       description: "Comfortable and modern room perfect for solo travelers or couples",
-      features: ["Queen Bed", "25 sqm", "City View", "Free WiFi"],
+      features: ["Queen Bed", "Smart TV", "Free WiFi", "Air Conditioning"],
     },
     {
       id: 2,
       name: "Deluxe Room",
       image: deluxeRoom,
-      price: "$299",
+      price: "On Request",
       description: "Spacious room with premium amenities and stunning views",
-      features: ["King Bed", "35 sqm", "Ocean View", "Balcony"],
+      features: ["King Bed", "Smart TV", "Free WiFi", "Air Conditioning"],
     },
     {
       id: 3,
       name: "Executive Suite",
       image: suiteRoom,
-      price: "$499",
+      price: "On Request",
       description: "Luxurious suite with separate living area and panoramic views",
-      features: ["King Bed", "60 sqm", "Panoramic View", "Living Room"],
+      features: ["King Bed", "Smart TV", "Jacuzzi", "Living Room", "Free WiFi"],
     },
   ];
 
   const amenities = [
     { icon: Wifi, name: "Free WiFi" },
     { icon: Tv, name: "Smart TV" },
-    { icon: Coffee, name: "Coffee Maker" },
     { icon: Wind, name: "Air Conditioning" },
   ];
 

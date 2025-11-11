@@ -20,7 +20,7 @@ const About = () => {
           <h2 className="text-4xl font-bold mb-8 text-center text-foreground">Our Story</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground">
             <p className="mb-6">
-              Since 1995, Savannah Paradise Hotels has been synonymous with luxury hospitality
+              Since 2015, Savannah Paradise Hotels has been synonymous with luxury hospitality
               and exceptional guest experiences. What began as a single boutique property has
               evolved into a distinguished hotel offering world-class accommodations and services.
             </p>

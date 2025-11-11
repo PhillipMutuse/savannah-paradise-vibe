@@ -24,7 +24,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">
+            <div className="h-10 w-10 rounded-full overflow-hidden">
+              <img 
+                src="/logo.jpg" 
+                alt="Savannah Paradise Logo" 
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="text-2xl font-bold text-primary hidden sm:block">
               Savannah Paradise
             </div>
           </Link>

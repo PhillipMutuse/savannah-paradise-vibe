@@ -1,8 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { UtensilsCrossed, Coffee, Wine, Presentation } from "lucide-react";
-import restaurantImage from "@/assets/dining-restaurant.jpg";
-import barImage from "@/assets/savanna-bar.jpg";
-import conferenceImage from "@/assets/conference-hall.jpg";
+import restaurantImage from "@/assets/dining-restaurant.png";
+import barImage from "@/assets/verandot.png";
+import conferenceImage from "@/assets/Reception lounge.png";
 
 const Dining = () => {
   const dining = [
